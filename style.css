@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+:root {
+    /**main color*/
+    --main-color: #0077ff;
+    --topic-color1: #fff;
+    --topic-color2: #1e1e1e;
+    --paragraph-color: #4e4e4e;
+    /**main font*/
+    --main-font: "Roboto";
+}
+
+/*!Fixed icon*/
+.main-icon {
+    height: 45px;
+    width: 45px;
+    background-color: var(--main-color);
+}
+
+/*!Header section*/
+.header-section {
+    background-image: url(image/hero-bg.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-header-section h1 {
+    font-size: 72px;
+}
+
+.content-header-section {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.down {
+    display: none;
+    background-color: #fff;
+    list-style: none;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding-inline: 20px;
+}
+
+.down li {
+    padding-block: 5px;
+}
+
+.drop a {
+    text-decoration: none;
+    color: var(--topic-color2);
+    padding: 0;
+}
+
+.drop:hover .down {
+    display: block;
+    transform: translate(-115%, -17%);
+}
+
+.dropdown-item:hover {
+    --bs-dropdown-link-hover-color: var(--main-color);
+}
+
+@media (max-width: 640px) {
+    .drop:hover .down {
+        transform: translate(0);
+    }
+}
+
+/*!About section*/
+.horizontal::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 3px;
+    width: 100px;
+    background-color: var(--main-color);
+}
+
+.main-horizontal {
+    height: 5px;
+    width: 40px;
+    background-color: var(--main-color);
+}
+
+/*!Services sectoin*/
+.border-icon {
+    width: 120px;
+    height: 120px;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    transition: 0.7s all;
+}
+
+.hover-card:hover .border-icon {
+    background-color: var(--main-color);
+    border-color: #dce5f0;
+    color: var(--topic-color1);
+}
+
+/*!Overlay fr1 section*/
+.overlay-fr1-section {
+    background-image: url(image/post-3.jpg);
+    background-attachment: fixed;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.lay {
+    background-color: rgba(0, 119, 255, 0.6);
+    height: 100%;
+}
+
+.border-icon-lay {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #ececec;
+    border-radius: 50%;
+    transition: 0.7s all;
+}
+
+@media (max-width:577px) {
+    .counter {
+        width: 100%;
+    }
+
+    .overlay-fr1-section {
+        height: 114.5vh;
+    }
+}
+
+@media (max-width:950px) {
+    .counter {
+        max-width: 17rem;
+    }
+}
+
+@media (min-width:951px) {
+    .counter {
+        width: 17rem;
+    }
+}
+
+/*!Portfolio section*/
+.image {
+    transition: 0.8s all;
+}
+
+.hover-image:hover .image {
+    transform: scale(1.3);
+}
+
+.redius-icon {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    transition: 0.7s all;
+}
+
+/*!Overlay sec2 section*/
+.overlay-sec2-section {
+    background-image: url(image/overlay-bg.jpg);
+    background-attachment: fixed;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.over {
+    padding-block: 40px;
+}
+
+/*!Blog section*/
+.T-hover {
+    transition: 0.5s all;
+}
+
+.title-hover:hover .T-hover {
+    color: var(--main-color);
+}
+
+#blog .small-icon {
+    font-size: 12px;
+    width: 4rem;
+    height: 2rem;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*!Form section*/
+.form-section {
+    background-image: url(image/overlay-bg.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.last-icon {
+    width: 47px;
+    height: 47px;
+    border: 3.7px solid var(--main-color);
+    transition: 0.7s all;
+}
+
+.last-icon:hover {
+    background-color: var(--main-color);
+    border-color: #dce5f0;
+    color: var(--topic-color1);
+}
+
+/*!Footer section*/
+footer {
+    background-color: #0756b1;
+}
